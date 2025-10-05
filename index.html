@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Insights: Advanced Tech Vocabulary (B2-C1)</title>
+    <!-- Chosen Palette: Dark Professional (Formal Blue and Calm Green for differentiation) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&family=Poppins:wght{500;700}&display=swap" rel="stylesheet">
+    <style>
+        /* Custom Styling for Professional Feel */
+        :root {
+            --dark-bg: #141414;
+            --mid-bg: #1F1F1F;
+            --formal-blue: #3b82f6; /* Blue-500 */
+            --calm-green: #34D399; /* Green-400 */
+        }
+        body {
+            background-color: var(--dark-bg);
+            color: #FFFFFF;
+            font-family: 'Inter', sans-serif;
+        }
+        .header-nav {
+            background-color: rgba(20, 20, 20, 0.95);
+        }
+        .hero-title {
+            font-family: 'Poppins', sans-serif;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+        }
+        .lesson-card {
+            background-color: var(--mid-bg);
+            border: 1px solid #333;
+            transition: transform 0.2s, box-shadow 0.3s;
+            border-radius: 0.75rem;
+        }
+        .lesson-card:hover {
+            transform: scale(1.01);
+            box-shadow: 0 0 30px rgba(59, 130, 246, 0.2); /* Formal Blue Shadow */
+        }
+        .english-explanation-box {
+            background-color: #2b2b2b;
+            padding: 0.75rem;
+            border-radius: 0.5rem;
+            color: #ccc;
+            border-left: 4px solid var(--formal-blue);
+            margin-top: 1rem;
+        }
+        .flow-core {
+            border: 3px solid var(--formal-blue);
+            box-shadow: 0 0 15px rgba(59, 130, 246, 0.4);
+        }
+        .exercise-box {
+            border: 2px solid var(--calm-green);
+            background-color: #1a2a2a;
+        }
+        .phrase-list li {
+            padding: 0.75rem 0;
+            border-bottom: 1px dashed #333;
+            display: flex;
+            flex-direction: column;
+        }
+        .phrase-list li:last-child {
+            border-bottom: none;
+        }
+        .phrase-list .expression {
+            font-weight: 600;
+            color: var(--calm-green);
+            margin-bottom: 0.25rem;
+            display: block;
+            font-size: 1.1em;
+        }
+        .phrase-list .scenario {
+            font-style: italic;
+            color: #ccc;
+            font-size: 0.95em;
+        }
+        /* New CSS for Animated Highlight */
+        @keyframes pulse-glow {
+            0%, 100% {
+                text-shadow: 0 0 5px rgba(59, 130, 246, 0.4), 0 0 10px rgba(59, 130, 246, 0.1);
+                transform: scale(1);
+            }
+            50% {
+                text-shadow: 0 0 8px var(--formal-blue), 0 0 15px rgba(59, 130, 246, 0.5);
+                transform: scale(1.02);
+            }
+        }
+        .animated-term {
+            animation: pulse-glow 2s infinite alternate;
+            font-weight: 700;
+            color: var(--formal-blue);
+            display: inline-block;
+            margin: 0 0.5rem;
+            padding: 0.1rem 0.3rem;
+            border-radius: 0.25rem;
+            background-color: rgba(59, 130, 246, 0.1);
+            transition: all 0.3s;
+        }
+    </style>
+</head>
+<body class="min-h-screen">
+
+    <!-- Header Navigation -->
+    <header class="header-nav sticky top-0 left-0 right-0 z-50 p-4 shadow-xl">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <h1 class="text-3xl font-bold text-formal-blue font-poppins">VOCABULARY INSIGHTS</h1>
+            <nav class="hidden sm:block">
+                <a href="#series-1" class="text-sm font-medium hover:text-blue-400 mx-3 transition-colors">1. Introduction</a>
+                <a href="#series-2" class="text-sm font-medium hover:text-blue-400 mx-3 transition-colors">2. Disrupt</a>
+                <a href="#series-3" class="text-sm font-medium hover:text-blue-400 mx-3 transition-colors">3. Scalable</a>
+                <a href="#series-4" class="text-sm font-medium hover:text-blue-400 mx-3 transition-colors">4. Encryption</a>
+                <a href="#series-5" class="text-sm font-medium hover:text-blue-400 mx-3 transition-colors">5. Interface & Bandwidth</a>
+                <a href="#series-6" class="text-sm font-medium hover:text-blue-400 mx-3 transition-colors">6. Sentences</a>
+                <a href="#exercise" class="text-sm font-medium hover:text-blue-400 mx-3 transition-colors">Practice</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="pt-20 pb-10">
+        <!-- HERO Section -->
+        <section class="max-w-7xl mx-auto px-4 mb-12">
+            <div class="relative rounded-xl overflow-hidden shadow-2xl">
+                <div class="h-96 w-full bg-cover bg-center" style="background: linear-gradient(to bottom, rgba(20, 20, 20, 0.1) 0%, var(--dark-bg) 100%), url('https://placehold.co/1280x500/1F1F1F/FFFFFF?text=Technology+Advancement');">
+                    <div class="absolute inset-0 p-8 flex flex-col justify-end">
+                        <p class="text-xl font-medium text-gray-300 mb-2">B2-C1 Level English | Professional Focus</p>
+                        <h2 class="hero-title text-5xl md:text-7xl font-extrabold text-white mb-4 leading-tight">
+                            Advanced <span class="text-calm-green">Tech Vocabulary</span> for Professional Discourse
+                        </h2>
+                        <p class="max-w-3xl text-lg text-gray-200">
+                           Essential high-level words (Disrupt, Scalable, Encryption, Interface, Bandwidth) perfect for discussing modern technology and digital transformation with confidence.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Series 1: Introduction and Vocabulary List -->
+        <section id="series-1" class="py-10">
+            <h3 class="text-2xl font-bold text-formal-blue ml-4 mb-4 md:text-3xl max-w-7xl mx-auto px-4 border-l-4 border-formal-blue pl-4">
+                Series 1: Introduction & The Core 5 Words
+            </h3>
+            <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-2 gap-8">
+                <div class="lesson-card p-6 rounded-xl flow-core">
+                    <h4 class="text-xl font-bold mb-3 text-formal-blue font-poppins">Lesson Overview</h4>
+                    <p class="text-white mb-4">
+                        We're living in a time where technology is literally improving each and every day. This lesson provides five high-level **B2 to C1 vocabulary words** to help you speak and write about digital advancements without being nervous.
+                    </p>
+                </div>
+                <div class="lesson-card p-6 rounded-xl">
+                    <h4 class="text-xl font-bold mb-3 text-formal-blue font-poppins">Today's Vocabulary Run-through</h4>
+                    <ul class="phrase-list text-white ml-2">
+                        <li>
+                            <span class="expression">Disrupt</span>
+                        </li>
+                        <li>
+                            <span class="expression">Scalable</span>
+                        </li>
+                        <li>
+                            <span class="expression">Encryption</span>
+                        </li>
+                        <li>
+                            <span class="expression">Interface</span>
+                        </li>
+                        <li>
+                            <span class="expression">Bandwidth</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Series 2: Disrupt (Verb) -->
+        <section id="series-2" class="py-10">
+            <h3 class="text-2xl font-bold text-formal-blue ml-4 mb-4 md:text-3xl max-w-7xl mx-auto px-4 border-l-4 border-formal-blue pl-4">
+                Series 2: Word 1 - Disrupt (Altering the Status Quo)
+            </h3>
+            <div class="max-w-7xl mx-auto px-4">
+                <div class="lesson-card p-6 rounded-xl flow-core">
+                    <h4 class="text-xl font-bold mb-3 text-calm-green font-poppins">Word 1: Disrupt (Verb)</h4>
+                    <ul class="phrase-list text-white ml-2">
+                        <li>
+                            <span class="expression">Definition: To significantly alter the way things are done, often causing a major shift.</span>
+                            <span class="scenario">It means changing an existing business model or market entirely. Think about the first touchscreen cell phone that **disrupted** the market.</span>
+                        </li>
+                        <li>
+                            <span class="expression">Example: Social media **disrupted** traditional communication methods.</span>
+                        </li>
+                        <li>
+                            <span class="expression">Example: New technologies often **disrupt** existing business models.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Series 3: Scalable (Adjective) -->
+        <section id="series-3" class="py-10">
+            <h3 class="text-2xl font-bold text-formal-blue ml-4 mb-4 md:text-3xl max-w-7xl mx-auto px-4 border-l-4 border-formal-blue pl-4">
+                Series 3: Word 2 - Scalable (Adaptability and Growth)
+            </h3>
+            <div class="max-w-7xl mx-auto px-4">
+                <div class="lesson-card p-6 rounded-xl">
+                    <h4 class="text-xl font-bold mb-3 text-calm-green font-poppins">Word 2: Scalable (Adjective)</h4>
+                    <ul class="phrase-list text-white ml-2">
+                        <li>
+                            <span class="expression">Definition: Able to be easily expanded or reduced in size or capacity to meet changing needs.</span>
+                            <span class="scenario">A business wants to **scale**; an IT system must be **scalable** to handle sudden growth in users or data without failing.</span>
+                        </li>
+                        <li>
+                            <span class="expression">Example: Scalable software allows companies to adapt to growth without major infrastructure changes.</span>
+                        </li>
+                        <li>
+                            <span class="expression">Example: Building **scalable** systems is crucial for handling unexpected surges in user traffic.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Series 4: Encryption (Noun) -->
+        <section id="series-4" class="py-10">
+            <h3 class="text-2xl font-bold text-formal-blue ml-4 mb-4 md:text-3xl max-w-7xl mx-auto px-4 border-l-4 border-formal-blue pl-4">
+                Series 4: Word 3 - Encryption (Security)
+            </h3>
+            <div class="max-w-7xl mx-auto px-4">
+                <div class="lesson-card p-6 rounded-xl flow-core">
+                    <h4 class="text-xl font-bold mb-3 text-calm-green font-poppins">Word 3: Encryption (Noun)</h4>
+                    <ul class="phrase-list text-white ml-2">
+                        <li>
+                            <span class="expression">Definition: The process of transforming data into a scrambled form that can only be accessed with a specific key.</span>
+                            <span class="scenario">This is essential for cybersecurity; it acts as a digital vault. Your password "happy" might be **encrypted** into non-readable characters.</span>
+                        </li>
+                        <li>
+                            <span class="expression">Example: Online banking relies on **encryption** to protect user information.</span>
+                        </li>
+                        <li>
+                            <span class="expression">Example: Choosing strong **encryption** methods is essential for cyber security.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Series 5: Interface & Bandwidth -->
+        <section id="series-5" class="py-10">
+            <h3 class="text-2xl font-bold text-formal-blue ml-4 mb-4 md:text-3xl max-w-7xl mx-auto px-4 border-l-4 border-formal-blue pl-4">
+                Series 5: Words 4 & 5 - Interface & Bandwidth
+            </h3>
+            <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-2 gap-8">
+                <div class="lesson-card p-6 rounded-xl">
+                    <h4 class="text-xl font-bold mb-3 text-calm-green font-poppins">Word 4: Interface (Noun)</h4>
+                    <ul class="phrase-list text-white ml-2">
+                        <li>
+                            <span class="expression">Definition: A point of interaction between a user and a machine, system, or software.</span>
+                            <span class="scenario">This is what connects you to the technology, like a screen or controller. A user-friendly **interface** makes software easier to learn.</span>
+                        </li>
+                        <li>
+                            <span class="expression">Example: Virtual reality headsets provide a new and immersive **interface** for gaming.</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="lesson-card p-6 rounded-xl flow-core">
+                    <h4 class="text-xl font-bold mb-3 text-calm-green font-poppins">Word 5: Bandwidth (Noun)</h4>
+                    <ul class="phrase-list text-white ml-2">
+                        <li>
+                            <span class="expression">Definition: The amount of data that can be transmitted through a network connection in a given amount of time.</span>
+                            <span class="scenario">Think of it as a super highway for information. Low **bandwidth** can cause slow loading times and buffering issues.</span>
+                        </li>
+                        <li>
+                            <span class="expression">Example: Streaming high-definition videos requires a high **bandwidth** internet connection.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Series 6: Full Review and Context Paragraph -->
+        <section id="series-6" class="py-10">
+            <h3 class="text-2xl font-bold text-formal-blue ml-4 mb-4 md:text-3xl max-w-7xl mx-auto px-4 border-l-4 border-formal-blue pl-4">
+                Series 6: Full Review and Context
+            </h3>
+            <div class="max-w-7xl mx-auto px-4">
+                <div class="lesson-card p-6 rounded-xl bg-gray-900 border-2 border-calm-green">
+                    <h4 class="text-xl font-bold mb-3 text-calm-green font-poppins">Context Paragraph</h4>
+                    <p class="text-white text-lg">
+                        The world of tech is on a constant sprint. Cloud computing, for example, offers **scalable** storage solutions for businesses without needing server rooms overflowing with equipment. But all that data flying around requires serious **bandwidth**, like a super highway for information. Security is also paramount, with strong **encryption** acting as a digital vault for sensitive data. Don't forget user experience: a clunky **interface** can be a major turnoff. Lastly, tech can **disrupt** entire industries—new inventions can be a double-edged sword; they might lead to job losses but also open exciting doors.
+                    </p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Final Review Section (Animated Highlight) -->
+        <section id="final-review" class="max-w-7xl mx-auto px-4 my-10">
+            <h3 class="text-2xl font-bold text-formal-blue text-center mb-6">
+                Key Concepts Review
+            </h3>
+            <div class="bg-gray-800 p-8 rounded-xl shadow-xl text-center">
+                <p class="text-xl text-white">
+                    Focus on the core meaning of each term before beginning the exercise:
+                </p>
+                <div class="mt-6 flex flex-wrap justify-center gap-4">
+                    <span class="animated-term">Disrupt</span>
+                    <span class="animated-term">Scalable</span>
+                    <span class="animated-term">Encryption</span>
+                    <span class="animated-term">Interface</span>
+                    <span class="animated-term">Bandwidth</span>
+                    <span class="animated-term">significantly alter</span>
+                    <span class="animated-term">easily expanded</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Consolidation Exercise -->
+        <section id="exercise" class="max-w-4xl mx-auto px-4 my-16">
+            <h3 class="text-4xl font-bold mb-6 text-center border-b-2 border-calm-green pb-2 text-calm-green">
+                Consolidation Exercise: Fill-in-the-Blank
+            </h3>
+             <p class="text-gray-400 text-center mb-8">
+                Complete the following sentences using the five core vocabulary words: **Disrupt, Scalable, Encryption, Interface, Bandwidth.**
+            </p>
+            <div class="exercise-box p-8 rounded-xl shadow-2xl">
+                <div class="mb-6">
+                    <p class="text-lg font-semibold text-formal-blue mb-2">1. Speed and Capacity</p>
+                    <p class="text-white mb-3 italic">Due to limited ________, the video call kept freezing, but the cloud service was designed to be ________ enough to handle a million users.</p>
+                    <textarea class="w-full h-24 p-2 mt-1 rounded bg-gray-700 text-white border border-gray-600 focus:ring-calm-green focus:border-calm-green" placeholder="Your answer here (e.g., Word1, Word2)"></textarea>
+                </div>
+
+                <div class="mb-6">
+                    <p class="text-lg font-semibold text-formal-blue mb-2">2. Security and Design</p>
+                    <p class="text-white mb-3 italic">The new app includes 256-bit ________ for all communications, ensuring data protection, but users complained that the confusing ________ made it difficult to navigate.</p>
+                    <textarea class="w-full h-24 p-2 mt-1 rounded bg-gray-700 text-white border border-gray-600 focus:ring-calm-green focus:border-calm-green" placeholder="Your answer here (e.g., Word1, Word2)"></textarea>
+                </div>
+
+                 <div>
+                    <p class="text-lg font-semibold text-formal-blue mb-2">3. Market Shift</p>
+                    <p class="text-white mb-3 italic">The introduction of AI-driven logistics systems is expected to drastically ________ the global supply chain, causing a major shift in how warehouses operate.</p>
+                    <textarea class="w-full h-24 p-2 mt-1 rounded bg-gray-700 text-white border border-gray-600 focus:ring-calm-green focus:border-calm-green" placeholder="Your answer here..."></textarea>
+                </div>
+            </div>
+        </section>
+
+        <!-- Summary Zone -->
+        <section id="summary" class="max-w-xl mx-auto px-4 my-16 text-center">
+            <div class="p-8 rounded-xl bg-formal-blue bg-opacity-20 border-2 border-formal-blue shadow-lg">
+                <h3 class="text-3xl font-bold text-blue-400 mb-4 font-poppins">
+                    FINAL WORD | Professional Excellence
+                </h3>
+                <p class="text-lg text-gray-200 max-w-3xl mx-auto">
+                    Mastering vocabulary like **disrupt** and **scalable** allows you to articulate complex business and technology trends with clarity and authority in professional settings.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="text-center py-6 text-gray-500 text-sm border-t border-gray-800 mt-10">
+        @ Daby - Professional Development
+    </footer>
+
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-app.js";
+        import { getAuth, signInAnonymously, signInWithCustomToken } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-auth.js";
+        const initializeFirebase = async () => {
+            try {
+                // Ensure variables are defined, even if the runtime environment doesn't provide them
+                const firebaseConfig = typeof __firebase_config !== 'undefined' ? JSON.parse(__firebase_config) : null;
+                const initialAuthToken = typeof __initial_auth_token !== 'undefined' ? __initial_auth_token : null;
+
+                if (firebaseConfig) {
+                    const app = initializeApp(firebaseConfig);
+                    const auth = getAuth(app);
+
+                    // Log the auth token availability
+                    if (initialAuthToken) {
+                        console.log("Firebase: Signing in with custom token...");
+                        await signInWithCustomToken(auth, initialAuthToken);
+                    } else {
+                        console.log("Firebase: Signing in anonymously (no custom token provided)...");
+                        await signInAnonymously(auth);
+                    }
+                    console.log("Firebase initialized and authenticated successfully.");
+                } else {
+                    console.error("Firebase: Configuration not available. Skipping initialization.");
+                }
+            } catch (error) {
+                console.error("Firebase init error:", error);
+            }
+        };
+        // Initialize Firebase when the window loads
+        window.onload = initializeFirebase;
+    </script>
+</body>
+</html>
